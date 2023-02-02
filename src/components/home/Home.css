@@ -7,15 +7,13 @@
   height: 100vh;
 }
 
-.home::before {
-  content: '';
-  background: url(https://phonoteka.org/uploads/posts/2022-01/1642976756_5-phonoteka-org-p-zadnii-fon-dlya-saita-5.jpg);
+.home__bg {
+  background-image: url(https://phonoteka.org/uploads/posts/2022-01/1642976756_5-phonoteka-org-p-zadnii-fon-dlya-saita-5.jpg);
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
   position: fixed;
   z-index: -1;
-
 }
 
 .home__text {
@@ -30,13 +28,20 @@
   font-size: var(--fs-title-xxl);
   line-height: var(--lh-title-xxl);
   font-weight: var(--fw-title-xxl);
+  margin-bottom: 10px;
 }
 
 .home__subtitle {
   font-size: var(--fs-subtitle-xxl);
   line-height: var(--lh-subtitle-xxl);
   font-weight: var(--fw-subtitle-xxl);
+  margin-bottom: 30px;
 }
 
 .home__arrow {
+  text-align: center;
+}
+
+.home__icon {
+  font-size: 48px;
 }
