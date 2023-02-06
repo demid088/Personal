@@ -1,18 +1,15 @@
 .home__arrow_animation {
-  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  overflow: hidden;
-  z-index: -1;
+  color: var(--color);
+  animation: animArrow 1s linear infinite;
 }
 
-
-@keyframes animStar {
+@keyframes animArrow {
   from {
-    transform: translateY(0px);
+    transform: translateY(-40px);
+    opacity: 0;
   }
   to {
-    transform: translateY(-2000px);
+    transform: translateY(0px);
+    opacity: 1;
   }
 }
