@@ -46,8 +46,14 @@
 
 } */
 
+.menu__item {
+  border: 2px solid transparent;
+  transition: all 0.3s;
+}
+
 .menu__item:hover {
-  background-color: var(--color-bg)
+  /* background-color: var(--color-bg) */
+  border: 2px solid var(--color);
 }
 
 .menu__link {
@@ -58,10 +64,7 @@
   overflow: hidden;
   user-select: none;
   z-index: 5;
-}
-
-.menu__link:hover {
-  color: #090a0f;
+  transition: all 0.2s;
 }
 
 .menu__link.active {

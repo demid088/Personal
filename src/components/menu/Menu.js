@@ -33,7 +33,7 @@ function Menu() {
             <span className='menu__text'>Home</span>
           </Link>
         </li>
-        <li className='menu__item'>
+        {/* <li className='menu__item'>
           <Link
             className='menu__link _flex'
             activeClass='active'
@@ -46,7 +46,7 @@ function Menu() {
             <span className='material-icons menu__icon'>person</span>
             <span className='menu__text'>About</span>
           </Link>
-        </li>
+        </li> */}
         <li className='menu__item'>
           <Link
             className='menu__link _flex'

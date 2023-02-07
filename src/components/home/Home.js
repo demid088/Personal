@@ -1,3 +1,5 @@
+import { Link } from 'react-scroll'
+
 import './Home.css'
 import './animationBg.css'
 import './animationArrow.css'
@@ -13,12 +15,28 @@ function Home() {
       <div className='home__text'>
         <h1 className='home__title'>Demidov Dmitriy</h1>
         <p className='home__subtitle'>Web Developer</p>
-        <button className='btn btn_outline home__btn'>Contact Me</button>
+        <Link
+          className='btn btn_outline home__btn'
+          to='contact'
+          spy={true}
+          smooth={true}
+          offset={0}
+          duration={500}
+        >
+          Contact Me
+        </Link>
       </div>
       <div className='home__arrow home__arrow_animation'>
-        <a href='#about' className='material-icons home__icon'>
+        <Link
+          className='material-icons home__icon'
+          to='projects'
+          spy={true}
+          smooth={true}
+          offset={0}
+          duration={500}
+        >
           expand_more
-        </a>
+        </Link>
       </div>
     </section>
   )
