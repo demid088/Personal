@@ -1,5 +1,5 @@
 .home__arrow_animation {
-  color: var(--color);
+  color: var(--color-3);
   animation: animArrow 1s linear infinite;
 }
 

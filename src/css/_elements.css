@@ -1,11 +1,12 @@
 .btn {
   position: relative;
-  background-color: var(--color);
+  background-color: var(--color-1);
   font-weight: 500;
   line-height: 24px;
   text-align: center;
-  color: var(--color-text-2);
+  color: var(--color-1);
   padding: 13px 20px;
+  transition: all 0.3s;
 }
 
 
@@ -13,8 +14,12 @@
 
 .btn_outline {
   background-color: transparent;
-  color: var(--color-text-1);
-  border: 2px solid var(--color);
+  color: var(--color-4);
+  border: 2px solid var(--color-2);
+}
+
+.btn_outline:hover {
+  background-color: var(--color-2);
 }
 
 

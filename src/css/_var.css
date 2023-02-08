@@ -5,6 +5,12 @@
   --color-text-1: #b3b3b3;
   --color-text-2: #1b1b1b;
   
+  /* new */
+  --color-1: #191A19;
+  --color-2: #1E5128;
+  --color-3: #4E9F3D;
+  --color-4: #D8E9A8;
+  
   /* font */
   --fs-title-xxl: 2.9rem;
   --lh-title-xxl: 3.2rem;
