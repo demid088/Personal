@@ -7,6 +7,7 @@ import Menu from './components/menu/Menu'
 import Home from './components/home/Home';
 // import About from './components/about/About';
 import Projects from './components/projects/Projects';
+import Skills from './components/skills/Skills';
 
 ReactDOM.render(
   <StrictMode>
@@ -15,6 +16,7 @@ ReactDOM.render(
       <Home />
       {/* <About /> */}
       <Projects />
+      <Skills />
     </main>
   </StrictMode>,
   document.getElementById('root')
