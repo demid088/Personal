@@ -1,5 +1,7 @@
 import "./Projects.css"
 
+// const projects = []
+
 function Projects() {
   return (
     <section className='projects' id='projects'>

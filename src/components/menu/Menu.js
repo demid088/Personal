@@ -4,6 +4,8 @@ import './Menu.css'
 
 import logo from './img/freelancer.jpg'
 
+// const menu = []
+
 const scrollToTop = () => {
   scroll.scrollToTop()
 }

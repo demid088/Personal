@@ -1,0 +1,50 @@
+.contact {
+  background-color: var(--color-1);
+  width: 100%;
+  min-height: 100vh;
+}
+
+.contact__header {
+  background-color: var(--color-3);
+  color: var(--color-1);
+  padding: 30px 40px;
+}
+
+.contact__title {
+  font-size: var(--fs-title-xxl);
+  line-height: var(--lh-title-xxl);
+  font-weight: 200;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.contact__content {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 70%;
+  padding: 50px 0;
+}
+
+.contact__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30%;
+  height: 100%;
+  padding: 20px;
+}
+
+.info__title {}
+
+.info__subtitle {}
+
+.info__mail {}
+
+.contact__icon {}
+
+.info__github {}
+
+/* .info__social {} */
+
+/* .contact__form {} */

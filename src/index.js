@@ -8,6 +8,7 @@ import Home from './components/home/Home';
 // import About from './components/about/About';
 import Projects from './components/projects/Projects';
 import Skills from './components/skills/Skills';
+import Contact from './components/contact/Contact';
 
 ReactDOM.render(
   <StrictMode>
@@ -17,6 +18,7 @@ ReactDOM.render(
       {/* <About /> */}
       <Projects />
       <Skills />
+      <Contact />
     </main>
   </StrictMode>,
   document.getElementById('root')

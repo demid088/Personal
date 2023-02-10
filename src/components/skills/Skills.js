@@ -1,5 +1,20 @@
 import "./Skills.css"
 
+// import logo from './img/freelancer.jpg'
+
+// импорт этого дела
+// const skills = [
+//   {
+//     title: 'frontend',
+//     list: [
+//       {
+//         img: 'html.svg',
+//         caption: 'HTML 5',
+//       },
+//     ]
+//   },
+// ]
+
 function Skills() {
   return (
     <section className='skills' id='skills'>
@@ -53,12 +68,12 @@ function Skills() {
               </div>
               <span className='skill__caption'>React</span>
             </li>
-            <li className='box__item'>
+            {/* <li className='box__item'>
               <div className='skill__ico'>
                 <img src='./img/skills/jquery.svg' alt='' />
               </div>
               <span className='skill__caption'>jQuery</span>
-            </li>
+            </li> */}
           </ul>
         </div>
         {/* BACKEND */}
