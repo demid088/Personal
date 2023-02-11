@@ -33,17 +33,48 @@
   width: 30%;
   height: 100%;
   padding: 20px;
+  border: var(--border);
 }
 
-.info__title {}
+.info__title {
+  font-size: 2.0rem;
+  line-height: 2.5rem;
+  font-weight: 400;
+}
 
-.info__subtitle {}
+.info__subtitle {
+  font-size: 1.5rem;
+  line-height: 2.0rem;
+  font-weight: 200;
+  margin-bottom: 10px;
+  color: var(--color-3);
+}
 
-.info__mail {}
+.info__mail,
+.info__github {
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
 
-.contact__icon {}
+.contact__icon {
+  margin-right: 15px;
+}
 
-.info__github {}
+.info__text {
+  margin-right: 10px;
+}
+
+.info__link {
+  color: var(--color-3);
+  transition: all 0.3s;
+}
+
+.info__link:hover {
+  text-decoration: underline;
+  color: var(--color-4);
+  
+}
 
 /* .info__social {} */
 

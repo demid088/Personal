@@ -2,9 +2,10 @@ import { Link, animateScroll as scroll } from 'react-scroll'
 
 import './Menu.css'
 
-import logo from './img/freelancer.jpg'
+// import logo from './img/freelancer.jpg'
 
 // const menu = []
+// анимация на логотипе
 
 const scrollToTop = () => {
   scroll.scrollToTop()
@@ -13,10 +14,19 @@ const scrollToTop = () => {
 function Menu() {
   return (
     <nav className='menu'>
-      <div onClick={scrollToTop} className='menu__logo'>
+      <div className='menu__logo'>
         {/* <h2 className='logo__title'>Demidov Dmitriy</h2> */}
-        <div className='logo__img'>
+        {/* <div className='logo__img'>
           <img src={logo} alt='freelancer' />
+        </div> */}
+        <div className='logo' onClick={scrollToTop}>
+          <div className='logo'>
+            <div className='logo'>
+              <div className='logo'>
+                <div className='logo'></div>
+              </div>
+            </div>
+          </div>
         </div>
         {/* <span className='logo__subtitle'>React Developer</span> */}
       </div>

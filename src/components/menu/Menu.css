@@ -11,9 +11,10 @@
 
 .menu__logo {
   /* text-align: center; */
+  height: 200px;
+  margin-bottom: 20px;
   padding: 20px;
-  cursor: pointer;
-  /* border-bottom: 1px solid var(--color-bg); */
+  border-bottom: 1px solid var(--color-2);
 }
 
 /* .logo__title {
@@ -23,24 +24,37 @@
   margin-bottom: 10px;
 } */
 
-.logo__img {
+/* .logo__img {
   display: flex;
   width: 150px;
   height: 150px;
   margin: 0 auto 10px;
   border-radius: 50%;
   overflow: hidden;
-}
+} */
 
-.logo__img > img {
+/* .logo__img > img {
   object-fit: cover;
   transform: scale(2) translate(-5px, 5px);
+} */
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 90%;
+  margin: 0 auto;
+  border: var(--border);
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  cursor: pointer;
 }
 
-.logo__subtitle {
+/* .logo__subtitle {
   font-size: 1.1rem;
   font-weight: 300;
-}
+} */
 
 /* .menu__list {
 

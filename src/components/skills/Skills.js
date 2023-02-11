@@ -2,7 +2,7 @@ import "./Skills.css"
 
 // import logo from './img/freelancer.jpg'
 
-// импорт этого дела
+// импорт этого дела / добавить NPM
 // const skills = [
 //   {
 //     title: 'frontend',

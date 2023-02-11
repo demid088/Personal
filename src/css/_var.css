@@ -11,6 +11,9 @@
   --color-3: #4E9F3D;
   --color-4: #D8E9A8;
   
+  /* border */
+  --border: 2px solid var(--color-3);
+
   /* font */
   --fs-title-xxl: 2.9rem;
   --lh-title-xxl: 3.2rem;

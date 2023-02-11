@@ -84,6 +84,7 @@
   font-size: var(--fs-subtitle-xxl);
   line-height: var(--lh-subtitle-xxl);
   font-weight: var(--fw-subtitle-xxl);
+  color: var(--color-1);
 }
 
 .card__desc {

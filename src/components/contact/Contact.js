@@ -12,15 +12,25 @@ function Contact() {
           <span className='info__subtitle'>Web Developer</span>
           <div className='info__mail'>
             <span className='material-icons contact__icon'>mail</span>
-            E-mail:
-            <a href='mailto:demid088web@gmail.com' title='Send message...'>
+            <span className='info__text'>E-mail:</span>
+            <a
+              className='info__link'
+              href='mailto:demid088web@gmail.com'
+              title='Send message...'
+            >
               demid088web@gmail.com
             </a>
           </div>
           <div className='info__github'>
             <span className='material-icons contact__icon'>code</span>
-            GitHub:
-            <a href='https://github.com/demid088' title='GitHub portfolio'>
+            <span className='info__text'>GitHub:</span>
+            <a
+              className='info__link'
+              href='https://github.com/demid088'
+              title='GitHub portfolio'
+              target='_blank'
+              rel='external noopener noreferrer'
+            >
               https://github.com/demid088
             </a>
           </div>
