@@ -1,6 +1,5 @@
 import "./Skills.css"
 
-// import logo from './img/freelancer.jpg'
 import skillsList from './skillsList'
 
 function Skills() {
@@ -21,7 +20,8 @@ function Skills() {
                     return (
                       <li className='box__item' key={idx}>
                         <div className='skill__ico'>
-                          <img src={'./img/skills/' + info.img} alt={info.caption} />
+                          <img src={require('./img/' + info.img)} alt={info.caption}
+                          />
                         </div>
                         <span className='skill__caption'>{info.caption}</span>
                       </li>
@@ -39,3 +39,4 @@ function Skills() {
 }
 
 export default Skills
+

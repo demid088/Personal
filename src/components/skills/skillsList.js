@@ -1,6 +1,3 @@
-// импорт этого дела / добавить NPM
-
-
 const skills = [
   {
     title: 'frontend',
@@ -59,6 +56,10 @@ const skills = [
   {
     title: 'other',
     list: [
+      {
+        img: 'npm.svg',
+        caption: 'NPM',
+      },
       {
         img: 'webpack.svg',
         caption: 'Webpack',

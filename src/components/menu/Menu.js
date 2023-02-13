@@ -4,8 +4,11 @@ import './Menu.css'
 
 // import logo from './img/freelancer.jpg'
 
-// const menu = []
-// анимация на логотипе
+import menuList from './menuList'
+
+// анимация на логотипе - движение за курсором
+// https://ru.stackoverflow.com/questions/1413185/react-%D0%94%D0%B2%D0%B8%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5-svg-%D0%B7%D0%B0-%D0%BA%D1%83%D1%80%D1%81%D0%BE%D1%80%D0%BE%D0%BC
+// https://atuin.ru/blog/parallaks-effekt-pri-dvizhenii-myshi/
 
 const scrollToTop = () => {
   scroll.scrollToTop()
@@ -31,88 +34,26 @@ function Menu() {
         {/* <span className='logo__subtitle'>React Developer</span> */}
       </div>
       <ul className='menu__list'>
-        <li className='menu__item'>
-          <Link
-            className='menu__link _flex'
-            activeClass='active'
-            to='home'
-            spy={true}
-            smooth={true}
-            offset={0}
-            duration={500}
-          >
-            <span className='material-icons menu__icon'>home</span>
-            <span className='menu__text'>Home</span>
-          </Link>
-        </li>
-        {/* <li className='menu__item'>
-          <Link
-            className='menu__link _flex'
-            activeClass='active'
-            to='about'
-            spy={true}
-            smooth={true}
-            offset={0}
-            duration={500}
-          >
-            <span className='material-icons menu__icon'>person</span>
-            <span className='menu__text'>About</span>
-          </Link>
-        </li> */}
-        <li className='menu__item'>
-          <Link
-            className='menu__link _flex'
-            activeClass='active'
-            to='projects'
-            spy={true}
-            smooth={true}
-            offset={0}
-            duration={500}
-          >
-            <span className='material-icons menu__icon'>space_dashboard</span>
-            <span className='menu__text'>Projects</span>
-          </Link>
-        </li>
-        <li className='menu__item'>
-          <Link
-            className='menu__link _flex'
-            activeClass='active'
-            to='skills'
-            spy={true}
-            smooth={true}
-            offset={0}
-            duration={500}
-          >
-            <span className='material-icons menu__icon'>bar_chart</span>
-            <span className='menu__text'>Skills</span>
-          </Link>
-        </li>
-        {/* <li className='menu__item'>
-          <a href='#testimonials' className='menu__link _flex'>
-            <span className='material-icons menu__icon'>interpreter_mode</span>
-            <span className='menu__text'>Testimonials</span>
-          </a>
-        </li> */}
-        {/* <li className='menu__item'>
-          <a href='#blog' className='menu__link _flex'>
-            <span className='material-icons menu__icon'>edit</span>
-            <span className='menu__text'>Blog</span>
-          </a>
-        </li> */}
-        <li className='menu__item'>
-          <Link
-            className='menu__link _flex'
-            activeClass='active'
-            to='contact'
-            spy={true}
-            smooth={true}
-            offset={0}
-            duration={500}
-          >
-            <span className='material-icons menu__icon'>email</span>
-            <span className='menu__text'>Contact</span>
-          </Link>
-        </li>
+        {
+          menuList.map(item => {
+            return (
+              <li className='menu__item' key={item.name}>
+                <Link
+                  className='menu__link _flex'
+                  activeClass='active'
+                  to={item.to}
+                  spy={true}
+                  smooth={true}
+                  offset={0}
+                  duration={500}
+                >
+                  <span className='material-icons menu__icon'>{item.icon}</span>
+                  <span className='menu__text'>{item.name}</span>
+                </Link>
+              </li>
+            )
+          })
+        }
       </ul>
     </nav>
   )

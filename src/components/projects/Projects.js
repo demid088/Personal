@@ -1,6 +1,6 @@
 import "./Projects.css"
 
-// const projects = []
+import projectsList from './projectsList'
 
 function Projects() {
   return (
@@ -10,101 +10,36 @@ function Projects() {
       </header>
       <div className='projects__content container'>
         <ul className='projects__cards'>
-          <li className='projects__card'>
-            <div className='card__bg'>
-              <img
-                src='http://static.buqara.kz/uploads/images/normal/c5c69629cc87fc55064cefcebc5ff2fc.jpg'
-                alt=''
-              />
-            </div>
-            <div className="card__hover">
-              <div className='card__text'>
-                <h4 className='card__title'>Title project</h4>
-                <span className='card__desc'>React / Node</span>
-              </div>
-              <div className='card__btn'>
-                <a href='/' className='btn btn_outline card__link'>
-                  LEARN MORE
-                </a>
-              </div>
-            </div>
-          </li>
-          <li className='projects__card'>
-            <div className='card__bg'>
-              <img
-                src='http://static.buqara.kz/uploads/images/normal/c5c69629cc87fc55064cefcebc5ff2fc.jpg'
-                alt=''
-              />
-            </div>
-            <div className="card__hover">
-              <div className='card__text'>
-                <h4 className='card__title'>Title project</h4>
-                <span className='card__desc'>React / Node</span>
-              </div>
-              <div className='card__btn'>
-                <a href='/' className='btn btn_outline card__link'>
-                  LEARN MORE
-                </a>
-              </div>
-            </div>
-          </li>
-          <li className='projects__card'>
-            <div className='card__bg'>
-              <img
-                src='http://static.buqara.kz/uploads/images/normal/c5c69629cc87fc55064cefcebc5ff2fc.jpg'
-                alt=''
-              />
-            </div>
-            <div className="card__hover">
-              <div className='card__text'>
-                <h4 className='card__title'>Title project</h4>
-                <span className='card__desc'>React / Node</span>
-              </div>
-              <div className='card__btn'>
-                <a href='/' className='btn btn_outline card__link'>
-                  LEARN MORE
-                </a>
-              </div>
-            </div>
-          </li>
-          <li className='projects__card'>
-            <div className='card__bg'>
-              <img
-                src='http://static.buqara.kz/uploads/images/normal/c5c69629cc87fc55064cefcebc5ff2fc.jpg'
-                alt=''
-              />
-            </div>
-            <div className="card__hover">
-              <div className='card__text'>
-                <h4 className='card__title'>Title project</h4>
-                <span className='card__desc'>React / Node</span>
-              </div>
-              <div className='card__btn'>
-                <a href='/' className='btn btn_outline card__link'>
-                  LEARN MORE
-                </a>
-              </div>
-            </div>
-          </li>
-          <li className='projects__card'>
-            <div className='card__bg'>
-              <img
-                src='http://static.buqara.kz/uploads/images/normal/c5c69629cc87fc55064cefcebc5ff2fc.jpg'
-                alt=''
-              />
-            </div>
-            <div className="card__hover">
-              <div className='card__text'>
-                <h4 className='card__title'>Title project</h4>
-                <span className='card__desc'>React / Node</span>
-              </div>
-              <div className='card__btn'>
-                <a href='/' className='btn btn_outline card__link'>
-                  LEARN MORE
-                </a>
-              </div>
-            </div>
-          </li>
+          {
+            projectsList.map(project => {
+              return (
+                <li className='projects__card' key={project.title}>
+                  <div className='card__bg'>
+                    <img
+                      src={require('./img/' + project.img)}
+                      alt={project.title}
+                    />
+                  </div>
+                  <div className='card__hover'>
+                    <div className='card__text'>
+                      <h4 className='card__title'>{project.title}</h4>
+                      <span className='card__desc'>
+                        {project.stack.join(' / ')}
+                      </span>
+                    </div>
+                    <div className='card__btn'>
+                      <a
+                        href={project.link}
+                        className='btn btn_outline card__link'
+                      >
+                        LEARN MORE
+                      </a>
+                    </div>
+                  </div>
+                </li>
+              )
+            })
+          }
         </ul>
       </div>
     </section>
