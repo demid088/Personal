@@ -1,6 +1,8 @@
+import { Fragment } from 'react'
 import { Link, animateScroll as scroll } from 'react-scroll'
 
 import './Menu.css'
+import './MobileMenu.css'
 
 // import logo from './img/freelancer.jpg'
 
@@ -16,26 +18,26 @@ const scrollToTop = () => {
 
 function Menu() {
   return (
-    <nav className='menu'>
-      <div className='menu__logo'>
-        {/* <h2 className='logo__title'>Demidov Dmitriy</h2> */}
-        {/* <div className='logo__img'>
+    <Fragment>
+      <nav className='menu'>
+        <div className='menu__logo'>
+          {/* <h2 className='logo__title'>Demidov Dmitriy</h2> */}
+          {/* <div className='logo__img'>
           <img src={logo} alt='freelancer' />
         </div> */}
-        <div className='logo' onClick={scrollToTop}>
-          <div className='logo'>
+          <div className='logo' onClick={scrollToTop}>
             <div className='logo'>
               <div className='logo'>
-                <div className='logo'></div>
+                <div className='logo'>
+                  <div className='logo'></div>
+                </div>
               </div>
             </div>
           </div>
+          {/* <span className='logo__subtitle'>React Developer</span> */}
         </div>
-        {/* <span className='logo__subtitle'>React Developer</span> */}
-      </div>
-      <ul className='menu__list'>
-        {
-          menuList.map(item => {
+        <ul className='menu__list'>
+          {menuList.map((item) => {
             return (
               <li className='menu__item' key={item.name}>
                 <Link
@@ -52,10 +54,36 @@ function Menu() {
                 </Link>
               </li>
             )
-          })
-        }
-      </ul>
-    </nav>
+          })}
+        </ul>
+      </nav>
+      {/* MOBILE */}
+      <nav className='mobile-menu'>
+        <div className='mobile-menu__burger'></div>
+        <ul className='mobile-menu__list' id='menu__list'>
+          {menuList.map((item) => {
+            return (
+              <li className='mobile-menu__item' key={item.name}>
+                <Link
+                  className='mobile-menu__link _flex'
+                  activeClass='active'
+                  to={item.to}
+                  spy={true}
+                  smooth={true}
+                  offset={0}
+                  duration={500}
+                >
+                  <span className='material-icons mobile-menu__icon'>
+                    {item.icon}
+                  </span>
+                  <span className='mobile-menu__text'>{item.name}</span>
+                </Link>
+              </li>
+            )
+          })}
+        </ul>
+      </nav>
+    </Fragment>
   )
 }
 

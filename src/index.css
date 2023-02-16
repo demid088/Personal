@@ -3,3 +3,8 @@
 main {
   margin-left: 200px;
 }
+@media (max-width: 992px) {
+  main {
+    margin-left: auto;
+  }
+}
