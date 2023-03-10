@@ -45,7 +45,10 @@ function MenuMobile() {
             )
           })}
         </ul>
-        <div className='mobile-menu__shadow' onClick={toggleMenu}></div>
+        <div
+          className={'mobile-menu__shadow' + (isMenuOpen ? ' active' : '')}
+          onClick={toggleMenu}
+        ></div>
       </div>
     </nav>
   )

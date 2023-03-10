@@ -8,3 +8,16 @@ main {
     margin-left: auto;
   }
 }
+
+.subtitle {
+  font-size: var(--fs-title-xxl);
+  line-height: var(--lh-title-xxl);
+  font-weight: 200;
+  text-transform: uppercase;
+  margin: 0;
+}
+@media (max-width: 992px) {
+  .subtitle {
+    text-align: center;
+  }
+}

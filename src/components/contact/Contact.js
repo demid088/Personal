@@ -4,7 +4,7 @@ function Contact() {
   return (
     <section className='contact' id='contact'>
       <header className='contact__header'>
-        <h2 className='contact__title'>contact</h2>
+        <h2 className='contact__title subtitle'>contact</h2>
       </header>
       <div className='contact__content container'>
         <div className='contact__info'>

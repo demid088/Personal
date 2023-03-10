@@ -6,7 +6,7 @@ function Skills() {
   return (
     <section className='skills' id='skills'>
       <header className='skills__header'>
-        <h2 className='skills__title'>SKILLS</h2>
+        <h2 className='skills__title subtitle'>SKILLS</h2>
       </header>
       <div className='skills__content container'>
         {
@@ -20,8 +20,7 @@ function Skills() {
                     return (
                       <li className='box__item' key={idx}>
                         <div className='skill__ico'>
-                          <img src={require('./img/' + info.img)} alt={info.caption}
-                          />
+                          <img src={require('./img/' + info.img)} alt={info.caption} />
                         </div>
                         <span className='skill__caption'>{info.caption}</span>
                       </li>

@@ -67,7 +67,6 @@
   opacity: 0;
   transition: all 0.4s;
 }
-
 .card__hover:hover {
   padding: 20% 0;
   opacity: 1;
@@ -101,7 +100,6 @@
 .card__link {
   color: var(--color-1);
 }
-
 .card__link:hover {
   color: var(--color-4);
 }

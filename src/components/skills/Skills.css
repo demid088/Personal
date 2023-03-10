@@ -34,7 +34,9 @@
 }
 
 .box__title {
-  background-color: transparent;
+  position: sticky;
+  top: 0;
+  background-color: var(--color-1);
   border: 2px solid var(--color-3);
   color: var(--color-4);
   padding: 20px 30px;
@@ -43,6 +45,11 @@
   font-weight: 200;
   text-transform: uppercase;
   margin: 0;
+}
+@media (max-width: 992px) {
+  .box__title {
+    text-align: center;
+  }
 }
 
 .box__list {
