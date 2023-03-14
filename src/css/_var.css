@@ -19,9 +19,17 @@
   --lh-title-xxl: 3.2rem;
   --fw-title-xxl: 400;
   
+  --fs-title-sm: 2.0rem;
+  --lh-title-sm: 2.5rem;
+  --fw-title-sm: 300;
+
   --fs-subtitle-xxl: 2.0rem;
   --lh-subtitle-xxl: 2.5rem;
   --fw-subtitle-xxl: 300;
+
+  --fs-subtitle-sm: 1.5rem;
+  --lh-subtitle-sm: 2.0rem;
+  --fw-subtitle-sm: 200;
   
   --lh-text: 2;
 }

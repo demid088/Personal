@@ -30,12 +30,26 @@
   font-weight: var(--fw-title-xxl);
   margin-bottom: 10px;
 }
+@media (max-width: 480px) {
+  .home__title {
+    font-size: var(--fs-title-sm);
+    line-height: var(--lh-title-sm);
+      font-weight: var(--fw-title-sm);
+  }
+}
 
 .home__subtitle {
   font-size: var(--fs-subtitle-xxl);
   line-height: var(--lh-subtitle-xxl);
   font-weight: var(--fw-subtitle-xxl);
   margin-bottom: 30px;
+}
+@media (max-width: 480px) {
+  .home__subtitle {
+    font-size: var(--fs-subtitle-sm);
+    line-height: var(--lh-subtitle-sm);
+    font-weight: var(--fw-subtitle-sm);
+  }
 }
 
 .home__arrow {

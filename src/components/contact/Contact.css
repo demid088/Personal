@@ -32,10 +32,18 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 30%;
+  width: 360px;
+  min-width: 320px;
   height: 100%;
   padding: 20px;
   border: var(--border);
+}
+@media (max-width: 480px) {
+  .contact__info {
+    width: 90%;
+    align-items: center;
+    text-align: center;
+  }
 }
 
 .info__title {
@@ -56,15 +64,27 @@
 .info__github {
   display: flex;
   align-items: center;
-  height: 50px;
+  margin: 15px 0;
+}
+@media (max-width: 375px) {
+  .info__mail,
+  .info__github {
+    flex-direction: column;
+    margin: 10px 0;
+  }
 }
 
 .contact__icon {
   margin-right: 15px;
 }
-
 .info__text {
   margin-right: 10px;
+}
+@media (max-width: 375px) {
+  .contact__icon,
+  .info__text {
+    margin-right: 0;
+  }
 }
 
 .info__link {

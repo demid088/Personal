@@ -35,10 +35,10 @@ function Contact() {
             </a>
           </div>
           {/* ADD buttons social */}
-          <div className='info__social'></div>
+          {/* <div className='info__social'></div> */}
         </div>
         {/* ADD form */}
-        <div className='contact__form'></div>
+        {/* <div className='contact__form'></div> */}
       </div>
     </section>
   )

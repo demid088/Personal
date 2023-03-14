@@ -58,6 +58,11 @@
   width: 100%;
   padding: 20px;
 }
+@media (max-width: 1400px) {
+  .box__list {
+    justify-content: center;
+  }
+}
 
 .box__item {
   display: flex;
@@ -67,6 +72,12 @@
   max-width: 100px;
   margin: 30px;
 }
+@media (max-width: 375px) {
+  .box__item {
+    margin: 16px;
+  }
+}
+
 
 .skill__ico, 
 .skill__ico > img {
