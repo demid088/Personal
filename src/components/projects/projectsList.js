@@ -5,34 +5,7 @@ const projects = [
     img: 'dragon.jpg',
     stack: [
       'React',
-      'Hack',
-    ],
-  },
-  {
-    title: 'Dragon project',
-    link: '/drsgon',
-    img: 'dragon.jpg',
-    stack: [
-      'React',
-      'Hack',
-    ],
-  },
-  {
-    title: 'Dragon project',
-    link: '/drsgon',
-    img: 'dragon.jpg',
-    stack: [
-      'React',
-      'Hack',
-    ],
-  },
-  {
-    title: 'Dragon project',
-    link: '/drsgon',
-    img: 'dragon.jpg',
-    stack: [
-      'React',
-      'Hack',
+      'Node',
     ],
   },
 ]
