@@ -8,6 +8,33 @@ const projects = [
       'Hack',
     ],
   },
+  {
+    title: 'Dragon project',
+    link: '/drsgon',
+    img: 'dragon.jpg',
+    stack: [
+      'React',
+      'Hack',
+    ],
+  },
+  {
+    title: 'Dragon project',
+    link: '/drsgon',
+    img: 'dragon.jpg',
+    stack: [
+      'React',
+      'Hack',
+    ],
+  },
+  {
+    title: 'Dragon project',
+    link: '/drsgon',
+    img: 'dragon.jpg',
+    stack: [
+      'React',
+      'Hack',
+    ],
+  },
 ]
 
 export default projects
