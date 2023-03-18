@@ -1,0 +1,16 @@
+.mp__title {
+  font-size: var(--fs-modal-xxl);
+  line-height: var(--lh-modal-xxl);
+  font-weight: var(--fw-modal-xxl);
+  margin-bottom: 10%;
+  text-align: center;
+}
+
+.mp__link {
+  text-transform: uppercase;
+}
+
+.mp__img {
+  width: 100%;
+  margin-bottom: 5%;
+}

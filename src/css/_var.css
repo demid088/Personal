@@ -14,7 +14,7 @@
   /* border */
   --border: 2px solid var(--color-3);
 
-  /* font */
+  /* font title */
   --fs-title-xxl: 2.9rem;
   --lh-title-xxl: 3.2rem;
   --fw-title-xxl: 400;
@@ -22,14 +22,25 @@
   --fs-title-sm: 2.0rem;
   --lh-title-sm: 2.5rem;
   --fw-title-sm: 300;
-
+  
+  
+  /* font subtitle */
   --fs-subtitle-xxl: 2.0rem;
   --lh-subtitle-xxl: 2.5rem;
   --fw-subtitle-xxl: 300;
-
+  
   --fs-subtitle-sm: 1.5rem;
   --lh-subtitle-sm: 2.0rem;
   --fw-subtitle-sm: 200;
   
+  /* font modal */
+  --fs-modal-xxl: 2.0rem;
+  --lh-modal-xxl: 2.5rem;
+  --fw-modal-xxl: 300;
+
+  --fs-modal-sm: 1.5rem;
+  --lh-modal-sm: 2.0rem;
+  --fw-modal-sm: 200;
+
   --lh-text: 2;
 }

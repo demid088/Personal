@@ -6,13 +6,13 @@ function Modal({open, setOpen, children}) {
       <div className={'modal' + (open ? ' show' : '')}>
         <span
           onClick={() => setOpen(false)}
-          className='material-icons modal__close'
+          className='material-icons modal__close btn btn_outline'
         >
           close
         </span>
         {children}
       </div>
-      <div className="overlay"></div>
+      <div onClick={() => setOpen(false)} className='overlay'></div>
     </div>
   )
 }

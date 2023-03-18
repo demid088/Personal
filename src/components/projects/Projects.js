@@ -1,9 +1,9 @@
 import { Fragment, useState } from 'react'
+import ModalProject from './ModalProject'
 
 import './Projects.css'
 
 import projectsList from './projectsList'
-import Modal from './../modal/Modal'
 
 function Projects() {
   const [modalOpen, setModalOpen] = useState(false)
@@ -45,11 +45,12 @@ function Projects() {
                     </div>
                   </div>
                 </li>
-                <Modal open={modalOpen} setOpen={setModalOpen}>
-                  <h3>It is modal windows</h3>
-                  <p>{project.title}</p>
-                  <img src={require('./img/' + project.img)} alt='' />
-                </Modal>
+                <ModalProject
+                  open={modalOpen}
+                  setOpen={setModalOpen}
+                  project={project}
+                >
+                </ModalProject>
               </Fragment>
             )
           })}
