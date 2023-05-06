@@ -99,3 +99,13 @@
 .menu__text {
   line-height: 2;
 }
+
+.menu__contacts {
+  display: flex;
+  justify-content: space-around;
+  margin-top: auto;
+}
+
+.menu__contact {
+  width: 30px;
+}

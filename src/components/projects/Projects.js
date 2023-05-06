@@ -17,8 +17,8 @@ function Projects() {
         <ul className='projects__cards'>
           {projectsList.map((project) => {
             return (
-              <Fragment>
-                <li className='projects__card' key={project.title}>
+              <Fragment key={project.title}>
+                <li className='projects__card'>
                   <div className='card__bg'>
                     <img
                       src={require('./img/' + project.img)}
@@ -49,8 +49,7 @@ function Projects() {
                   open={modalOpen}
                   setOpen={setModalOpen}
                   project={project}
-                >
-                </ModalProject>
+                ></ModalProject>
               </Fragment>
             )
           })}

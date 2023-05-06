@@ -11,7 +11,12 @@ function ModalProject({ open, setOpen, project }) {
         alt={project.title}
       />
       <div className='mp__title'>{project.title}</div>
-      <a href={project.link} className='mp__link btn btn_outline'>
+      <a
+        href={project.link}
+        target='_blank'
+        rel='noopener noreferrer'
+        className='mp__link btn btn_outline'
+      >
         view site
       </a>
     </Modal>

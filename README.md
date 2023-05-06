@@ -9,3 +9,4 @@
 
 [] ADD contact buttons social
 [] ADD contact form
+[] Logo animation
