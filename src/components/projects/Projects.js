@@ -7,6 +7,7 @@ import projectsList from './projectsList'
 
 function Projects() {
   const [modalOpen, setModalOpen] = useState(false)
+  const [modalId, setModalId] = useState(1)
 
   return (
     <section className='projects' id='projects'>
@@ -14,6 +15,7 @@ function Projects() {
         <h2 className='projects__title subtitle'>PROJECTS</h2>
       </header>
       <div className='projects__content container'>
+        <ModalProject open={modalOpen} id={modalId} setOpen={setModalOpen} />
         <ul className='projects__cards'>
           {projectsList.map((project) => {
             return (
@@ -35,6 +37,7 @@ function Projects() {
                     <div className='card__btn'>
                       <button
                         onClick={() => {
+                          setModalId(project.id)
                           setModalOpen(true)
                           return false
                         }}
@@ -45,11 +48,6 @@ function Projects() {
                     </div>
                   </div>
                 </li>
-                <ModalProject
-                  open={modalOpen}
-                  setOpen={setModalOpen}
-                  project={project}
-                ></ModalProject>
               </Fragment>
             )
           })}

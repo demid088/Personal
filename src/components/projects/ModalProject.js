@@ -1,8 +1,11 @@
 import Modal from './../modal/Modal';
+import GetProject from './GetProject';
 
 import './ModalProject.css'
 
-function ModalProject({ open, setOpen, project }) {
+function ModalProject({ open, id, setOpen }) {
+  const project = GetProject(id)
+
   return (
     <Modal open={open} setOpen={setOpen}>
       <img
@@ -15,7 +18,7 @@ function ModalProject({ open, setOpen, project }) {
         href={project.link}
         target='_blank'
         rel='noopener noreferrer'
-        className='mp__link btn btn_outline'
+        className='btn btn_outline mp__link'
       >
         view site
       </a>
