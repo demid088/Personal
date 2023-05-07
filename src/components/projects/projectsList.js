@@ -83,21 +83,21 @@ const projects = [
   },
   {
     id: 9,
+    title: 'Snake game',
+    link: '',
+    img: 'dragon.jpg',
+    stack: [
+      'JavaScript',
+    ],
+  },
+  {
+    id: 10,
     title: 'LUNA',
     link: '',
     img: 'dragon.jpg',
     stack: [
       'HTML5',
       'CSS3',
-    ],
-  },
-  {
-    id: 10,
-    title: 'Snake game',
-    link: '',
-    img: 'dragon.jpg',
-    stack: [
-      'JavaScript',
     ],
   },
 ]

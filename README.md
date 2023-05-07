@@ -6,6 +6,7 @@
 
 ## TODO
 
-[] ADD contact buttons social
-[] ADD contact form
-[] Logo animation
+- [] ADD contact buttons social
+- [] ADD contact form
+- [] Logo animation
+- [] Несколько скриншотов при просмотре проекта
