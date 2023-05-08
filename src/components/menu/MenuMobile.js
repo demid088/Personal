@@ -17,7 +17,7 @@ function MenuMobile() {
 
   return (
     <nav className='mobile-menu'>
-      <ButtonBurger onClick={toggleMenu} open={isMenuOpen} />
+      <ButtonBurger toggle={toggleMenu} isOpen={isMenuOpen} />
       <div className={'mobile-menu__content' + (isMenuOpen ? ' active' : '')}>
         <ul
           className={'mobile-menu__list' + (isMenuOpen ? ' active' : '')}

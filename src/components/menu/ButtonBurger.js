@@ -1,10 +1,10 @@
 import './ButtonBurger.css'
 
-function ButtonBurger(props) {
+function ButtonBurger({ toggle, isOpen }) {
   return (
     <div
-      className={'mobile-menu__burger' + (props.open ? ' active' : '')}
-      onClick={props.onClick}
+      className={'mobile-menu__burger' + (isOpen ? ' active' : '')}
+      onClick={toggle}
     ></div>
   )
 }
