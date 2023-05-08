@@ -17,11 +17,15 @@ function Projects() {
       <div className='projects__content container'>
         <ModalProject open={modalOpen} id={modalId} setOpen={setModalOpen} />
         <ul className='projects__cards'>
-          {projectsList.map((project) => {
+          {projectsList.map((project, idx) => {
             return (
               <Fragment key={project.title}>
                 <li className='projects__card'>
-                  <div className='card__bg'>
+                  <div
+                    className={
+                      'card__bg' + (idx % 2 === 0 ? ' card__bg_even' : '')
+                    }
+                  >
                     <img
                       src={require('./img/' + project.img)}
                       alt={project.title}

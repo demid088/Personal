@@ -14,14 +14,22 @@ function ModalProject({ open, id, setOpen }) {
         alt={project.title}
       />
       <div className='mp__title'>{project.title}</div>
-      <a
-        href={project.link}
-        target='_blank'
-        rel='noopener noreferrer'
-        className='btn btn_outline mp__link'
-      >
-        view site
-      </a>
+      <div className="mp__buttons">
+        <a
+          href={project.link}
+          target='_blank'
+          rel='noopener noreferrer'
+          className='btn btn_outline mp__link'
+        >
+          view site
+        </a>
+        <span
+          className='material-icons btn btn_outline modal__close'
+          onClick={() => setOpen(false)}
+        >
+          close
+        </span>
+      </div>
     </Modal>
   )
 }

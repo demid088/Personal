@@ -3,7 +3,7 @@ const projects = [
     id: 1,
     title: 'List of users',
     link: '',
-    img: 'dragon.jpg',
+    img: 'list_of_users.jpg',
     stack: [
       'React',
     ],
@@ -12,7 +12,7 @@ const projects = [
     id: 2,
     title: 'Quiz',
     link: '',
-    img: 'dragon.jpg',
+    img: 'quiz.jpg',
     stack: [
       'React',
     ],
@@ -21,7 +21,7 @@ const projects = [
     id: 3,
     title: 'Currency Converter',
     link: '',
-    img: 'dragon.jpg',
+    img: 'currency_converter.jpg',
     stack: [
       'React',
     ],
@@ -30,7 +30,7 @@ const projects = [
     id: 4,
     title: 'Photo Collection',
     link: '',
-    img: 'dragon.jpg',
+    img: 'photo_collection.jpg',
     stack: [
       'React',
     ],
@@ -39,7 +39,7 @@ const projects = [
     id: 5,
     title: 'Animacs',
     link: '',
-    img: 'dragon.jpg',
+    img: 'animacs.jpg',
     stack: [
       'HTML5',
       'CSS3',
@@ -50,7 +50,7 @@ const projects = [
     id: 6,
     title: 'Users List',
     link: '',
-    img: 'dragon.jpg',
+    img: 'users_list.jpg',
     stack: [
       'Bootstrap',
       'NodeJS',
@@ -62,7 +62,7 @@ const projects = [
     id: 7,
     title: 'Calendar',
     link: '',
-    img: 'dragon.jpg',
+    img: 'calendar.jpg',
     stack: [
       'HTML',
       'CSS',
@@ -73,7 +73,7 @@ const projects = [
     id: 8,
     title: 'Travel Agency',
     link: '',
-    img: 'dragon.jpg',
+    img: 'travel_agency.jpg',
     stack: [
       'HTML',
       'CSS',
@@ -85,7 +85,7 @@ const projects = [
     id: 9,
     title: 'Snake game',
     link: '',
-    img: 'dragon.jpg',
+    img: 'snake_game.jpg',
     stack: [
       'JavaScript',
     ],
@@ -94,7 +94,7 @@ const projects = [
     id: 10,
     title: 'LUNA',
     link: '',
-    img: 'dragon.jpg',
+    img: 'luna.jpg',
     stack: [
       'HTML5',
       'CSS3',

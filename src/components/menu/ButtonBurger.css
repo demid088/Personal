@@ -3,6 +3,7 @@
   top: 4vw;
   left: 4vw;
   background-color: var(--color-4);
+  outline: 2px solid var(--color-1);
   width: 2rem;
   height: 0.2rem;
   margin: 10px 0;
@@ -16,6 +17,7 @@
   position: absolute;
   display: block;
   background-color: var(--color-4);
+  outline: 2px solid var(--color-1);
   width: 2rem;
   height: 0.2rem;
   transition: all 0.3s;
@@ -31,6 +33,7 @@
 
 .mobile-menu__burger.active {
   background-color: transparent;
+  outline-color: transparent;
 }
 
 .mobile-menu__burger.active::before {
