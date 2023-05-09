@@ -27,7 +27,7 @@ function Projects() {
                     }
                   >
                     <img
-                      src={require('./img/' + project.img)}
+                      src={require('./img/sm/' + project.img)}
                       alt={project.title}
                     />
                   </div>
