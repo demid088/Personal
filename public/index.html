@@ -21,7 +21,8 @@
     <!-- FONTs -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!-- FAVICON -->
@@ -58,10 +59,18 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
 
+    <!-- No Scripts -->
+    <noscript>
+      <link rel="stylesheet" href="noscript.css">
+    </noscript>
+
     <!-- Document Title -->
     <title>Demidov</title>
   </head>
   <body>
     <div id="root"></div>
+    <noscript class="noscript">
+      <div class="noscript__card">Ваш браузер не поддерживает скрипты или они отключены!</div>
+    </noscript>
   </body>
 </html>
