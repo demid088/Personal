@@ -1,0 +1,6 @@
+### All Robots
+User-agent: *
+Allow: /
+#Disallow: /
+
+#Sitemap: https://example.com/sitemap.xml
