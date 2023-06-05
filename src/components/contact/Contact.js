@@ -8,7 +8,7 @@ function Contact() {
       </header>
       <div className='contact__content container'>
         <div className='contact__info'>
-          <h4 className='info__title'>Demidov Dmitriy</h4>
+          <h5 className='info__title'>Demidov Dmitriy</h5>
           <span className='info__subtitle'>Web Developer</span>
           <div className='info__mail'>
             <span className='material-icons contact__icon'>mail</span>
