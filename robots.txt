@@ -1,6 +1,7 @@
 ### All Robots
 User-agent: *
 Allow: /
-#Disallow: /
+Disallow: /favicon/
+Disallow: /static/
 
-#Sitemap: https://example.com/sitemap.xml
+Sitemap: https://demid088.github.io/Personal/sitemap.xml
